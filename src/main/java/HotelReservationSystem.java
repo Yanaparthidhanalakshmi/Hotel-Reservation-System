@@ -6,7 +6,6 @@ import model.Reservation;
 import service.AuthService;
 import service.HotelService;
 import service.ReservationService;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -156,7 +155,7 @@ public class HotelReservationSystem {
     }
 
 
-    // --- Controller Logic: Menu and Delegation (MODIFIED) ---
+    // --- Controller Logic:
     private static boolean runSystemMenu(Connection connection, Scanner scanner, int selectedHotelId) throws SQLException {
         ReservationDAO dao = new ReservationDAO(connection);
         ReservationService service = new ReservationService(dao);
